@@ -18,13 +18,10 @@ let registerFormVisible = true;
     });
   });
 
-// $('.signup-button #signup-btn').click(function(){
-//   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-// });
   // localStorage.clear()
   // Đăng ký
   function handleSubmit(event) {
-    event.preventDefault(); // Prevent form submission to a server
+    event.preventDefault(); // 
     const email = document.getElementById("signup-email").value;
     const password = document.getElementById("signup-password").value;
     // Check if there is already data in localStorage
@@ -68,6 +65,7 @@ function handleLogin(event) {
   const user = registeredUsers.find((user) => user.email === username && user.password === password);
   if (user) {
       alert("Đăng nhập thành công!");
+      window.location.href = "http://127.0.0.1:5500/PRODUCTS/products.html";
   } else {
       alert("Đăng nhập không thành công. Vui lòng kiểm tra lại tên đăng nhập và mật khẩu.");
   }
