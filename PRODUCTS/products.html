@@ -18,6 +18,73 @@
         <p><a href="#"><u>最新のお知らせ</u></a>｜<a href="#"><u>よくある質問</u></a> | <a href="#"><u>ご相談方法</u></a></p>
         <p>✉ <a href="#"><u>ニュースレターに登録して最新情報を受け取る</u></a> ✉</p>
     </header>
+    <div class="wrap-header-cart js-panel-cart">
+        <div class="s-full js-hide-cart"></div>
+
+        <div class="header-cart flex-col-l p-l-65">
+            <div class="header-cart-title flex-w flex-sb-m p-b-8 d-flex justify-content-between align-items-center">
+                <span class="cl2" style="font-size: 1.5rem;margin-left: 15px;margin-right: 15px;font-weight: 700;">
+                    Bag (1)
+                </span>
+
+                <div class="cl2 p-lr-5 hov-cl1 js-hide-cart" style="font-size: 35px;cursor: pointer;">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+            
+            <div class="header-cart-content flex-w js-pscroll d-flex flex-column mb-auto">
+                <ul class="header-cart-wrapitem w-full mb-auto p-2" style="padding: 0px 18px 18px;list-style-type: none;">
+                    <li class="header-cart-item m-b-12" style="background-color: rgb(234, 234, 234);box-sizing: border-box;padding: 1rem;">
+                        <div class="header-cart-item-img d-flex justify-content-between">
+                            <img src="https://www.lush.com/cdn-cgi/image/width=640,f=auto/https://unicorn.lush.com/media/thumbnails/products/LUSHxSpongebob_Patrick_bathbomb_ecom_2023_2241460b_thumbnail_256.png" alt="IMG" style="height: 76px;width: 76px;">
+                            <div class="name-product-group" style="margin-left: -70px;">
+                                <div class="name-product">Surprised Patrick </div>
+                                <div class="sub-name">Bath Bomb</div>
+                            </div>
+                            <div>
+                                <button class="delete-product border-0" style="font-size: 20px;background-color: rgb(234, 234, 234);"><i class="fa-regular fa-trash-can"></i></button>
+                            </div>
+                        </div>
+
+                        <div class="middle-cart-item d-flex justify-content-between">
+                            <div class="group-function-button">
+                                <button class="minus-item-button btn-custom-function" style="margin-right: 5px;"><i class="fa-solid fa-minus"></i></button>
+                                <input type="text" class="number-item" style="width: 48px;height: 40px;margin-right: 5px;" value="1">
+                                <button class="plus-item-button btn-custom-function"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <div class="item-price d-flex align-items-center"><span class="price-item-text">JP¥850</span></div>
+                        </div>
+                        <div class="label-bottom-item d-flex" style="font-weight: 700;margin-top: 15px;">
+                            <div class="type-label">
+                                <div class="icon-label"></div>
+                                <p class="text-label" style="color: green;margin-right: 10px;">In Stock</p>
+                            </div>
+                            <div class="delivery-label">For online delivery</div>
+                        </div>
+                    </li>
+
+                </ul>
+                
+                <div class="w-full" style="position: absolute;
+                bottom: 0px;
+                width: 100%;">
+                    <div class="header-cart-total w-full p-tb-40">
+                        Total: $75.00
+                    </div>
+
+                    <div class="header-cart-buttons d-flex flex-column">
+                        <!-- <a href="shoping-cart.html" class="flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-r-8 m-b-10">
+                            View Cart
+                        </a> -->
+
+                        <a href="shoping-cart.html" style="height: 45px;line-height: 30px;" class="btn btn-dark flex-c-m stext-101 cl0 size-107 bg3 bor2 hov-btn3 p-lr-15 trans-04 m-b-10">
+                            Check Out
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <nav>
         <div id="logo">
             <img alt="LUSH"
@@ -29,7 +96,7 @@
                 <img alt="Japan - Flag"
                     src="https://res.cloudinary.com/lush/image/upload/f_auto,q_auto,fl_lossy,w_36/v1590069065/lush_com/site_assets/flags/flag_square/jp.svg"
                     class="header-Channel__CountryFlag-sc-34848cd9-1 hFVbJp">
-                <a href="#">
+                <a href="#" class="js-show-cart">
                     <i class="fa-solid fa-bag-shopping"></i>
                 </a>
             </div>
@@ -2453,5 +2520,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
+<script src="products.js"></script>
 
 </html>
