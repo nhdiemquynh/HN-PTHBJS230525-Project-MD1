@@ -85,13 +85,13 @@ body {
   line-height: 26px;
 }
 
-#login-btn {
+.message-login {
   background-color: #000000;
   color: #ffffff;
   margin-top: 10px;
 }
 
-#signup-btn {
+.message{
   margin-top: 10px;
   background-color: #ffffff;
   color: #000000;
